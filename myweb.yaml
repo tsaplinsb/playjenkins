@@ -64,6 +64,9 @@ spec:
     http:
       paths:
       - path: /
+        pathType: ImplementationSpecific
         backend:
-          serviceName: myweb
-          servicePort: 80
+          service:
+            name: myweb
+            port: 
+              number: 80           
